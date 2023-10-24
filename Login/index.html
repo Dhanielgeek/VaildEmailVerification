@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login verification</title>
+    <style>
+        @import url('./style.css');
+    </style>
+</head>
+<body>
+
+    <main class="Main_Holder">
+        <section id="Container">
+            <section class="Text_Container">
+                <div class="text">
+                    <h2>Stay updated!</h2>
+                    <p>Join 60,000+ product managers receiving monthly update on :</p>
+                </div>
+                <div class="List">
+                    <div class="list1">
+                        <div class="circle1">
+                            <img src="../Image/icon-list.svg" />
+                        </div>
+                        <p>Product discovery and building what matters</p>
+                    </div>
+                    <div class="list1">
+                        <div class="circle1">
+                            <img src="../Image/icon-list.svg" />
+                        </div>
+                        <p>Measuring to ensure updates are a success</p>
+                    </div>
+                    <div class="list1">
+                        <div class="circle1">
+                            <img src="../Image/icon-list.svg" />
+                        </div>
+                        <p>And much more!</p>
+                    </div>
+                </div>
+                <section class="Logs">
+                    <div class="hold">
+                        <label>Email address</label>
+                        <p id="error"></p>
+                        <p id="msg"></p>
+                    </div>
+                    <input type="email" placeholder="email@company.com"  required id="input" />
+                    <button id="Btn">Subscribe to monthly newsletter</button>
+                </section>
+                <section id="welcome">
+                </section>
+            </section>
+            <section class="Background_Container">
+                <img src="../Image/illustration-sign-up-desktop.svg" alt="background" />
+            </section>
+        </section>
+        <section id="success" style="display: none;">
+            <div class="img_container">
+                <div class="img_holder">
+                    <img src="../Image/icon-success.svg" alt="successful icon" />
+                </div>
+            </div>
+            <div class="thanks_container">
+                <h2>Thanks for Subscribing!</h2>
+            </div>
+            <div id="Confirm_container">
+               
+            </div>
+            <div class="button_container">
+                <button id="dismisBtn">Dismiss Message</button>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
